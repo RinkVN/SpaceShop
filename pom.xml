@@ -9,7 +9,7 @@
     <plugins>
         <plugin>
             <groupId>com.microsoft.azure</groupId>
-            <artifactId>>azure-webapp-maven-plugin</artifactId>
+            <artifactId>azure-webapp-maven-plugin</artifactId>
             <version>1</version>
             <configuration>
                 <schemaVersion>v1</schemaVersion>
