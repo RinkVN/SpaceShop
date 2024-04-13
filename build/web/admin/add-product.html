@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!-- Card -->
+<div class="card">
+    <!-- Header -->
+    <div class="card-header">
+        <h4 class="card-header-title">Phân loại (Biến thể)</h4>
+    </div>
+    <!-- End Header -->
+
+    <!-- Body -->
+    <div class="card-body">
+        <h6 class="text-cap">Options</h6>
+
+        <div class="js-add-field"
+             data-hs-add-field-options='{
+             "template": "#addAnotherOptionFieldTemplate",
+             "container": "#addAnotherOptionFieldContainer",
+             "defaultCreated": 0
+             }'>
+            <div class="row mb-4">
+                <div class="col-sm-4 mb-2 mb-sm-0">
+                    <!-- Select -->
+                    <div class="tom-select-custom">
+                        <select class="js-select form-select"
+                                data-hs-tom-select-options='{
+                                "searchInDropdown": false,
+                                "hideSearch": true
+                                }'>
+                            <option value="Size">Size</option>
+                            <option value="Color">Màu sắc</option>
+                            <option value="Material">Chất liệu</option>
+                            <!--                                                        <option value="Style">Style</option>
+                                                                                    <option value="Title">Title</option>-->
+                        </select>
+                    </div>
+                    <!-- End Select -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="Nhập tags" aria-label="Enter tags">
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <!-- Container For Input Field -->
+            <div id="addAnotherOptionFieldContainer"></div>
+
+            <a href="javascript:;" class="js-create-field form-link">
+                <i class="bi-plus"></i> Thêm option khác
+            </a>
+        </div>
+
+        <!-- Add Another Option Input Field -->
+        <div id="addAnotherOptionFieldTemplate" style="display: none;">
+            <div class="row mb-4">
+                <div class="col-sm-4 mb-2 mb-sm-0">
+                    <!-- Select -->
+                    <div class="tom-select-custom">
+                        <select name="variant" class="js-select-dynamic form-select"
+                                data-hs-tom-select-options='{
+                                "searchInDropdown": false,
+                                "hideSearch": true
+                                }'>
+                            <option value="Size">Size</option>
+                            <option value="Color">Màu sắc</option>
+                            <option value="Material">Chất liệu</option>
+                            <!--                                                        <option value="Style">Style</option>
+                                                                                    <option value="Title">Title</option>-->
+                        </select>
+                    </div>
+                    <!-- End Select -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="Enter tags" aria-label="Enter tags">
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Add Another Option Input Field -->
+    </div>
+    <!-- Body -->
+</div>
+<!-- End Card -->

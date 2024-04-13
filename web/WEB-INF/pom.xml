@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_4_0.xsd"
+       bean-discovery-mode="annotated"
+       version="4.0">
+</beans>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>>azure-webapp-maven-plugin</artifactId>
+            <version>1</version>
+            <configuration>
+                <schemaVersion>v1</schemaVersion>
+                <resourceGroup>Space</resourceGroup>
+                <appName>bacnam</appName>
+            ...
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
